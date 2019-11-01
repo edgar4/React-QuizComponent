@@ -14,7 +14,7 @@ class Quiz extends Component {
     render() {
 
         return <div>
-            <QuizQuestion />
+            <QuizQuestion quiz_question ="{quizData.quiz_questions}"/>
         </div>
     }
 
