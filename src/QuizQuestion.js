@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import QuizeQuestionButton from  './QuizQuestionButton.js';
 class QuizQuestion extends Component {
 
     render() {
