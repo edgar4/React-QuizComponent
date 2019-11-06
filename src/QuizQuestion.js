@@ -4,7 +4,7 @@ import QuizQuestionButton from './QuizQuestionButton.js';
 class QuizQuestion extends Component {
 
     render() {
-
+ console.log(this.props.quiz_question);
         return (
             <main>
                 <section>
@@ -12,8 +12,8 @@ class QuizQuestion extends Component {
                 </section>
                 <section className="buttons">
                     <ul>
-                        {this.props.quiz_question.map((answer_option, index) => {
-                            return <QuizQuestionButton key={index} button_text={answer_option}/>
+                        {this.props.quiz_question.answer_options.map((answer_option, index) => {
+                            return (<QuizQuestionButton key={index} button_text={answer_option}/>)
                         })}
 
                     </ul>
