@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 class QuizQuestionButton extends Component{
 
     handleClick(){
+        this.props.clickhandler(button_text)
 
     }
 
